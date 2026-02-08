@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Theeya ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("theeya.jpg") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.65);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 420px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.yes { background: #00ff9d; color: black; }
+.no { background: #ff4d6d; color: white; }
+.continue { background: white; color: #ff4d6d; }
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="tere-liye.mp3" type="audio/mp3">
+</audio>
+
+<div class="overlay">
+  <div class="box">
+
+    <div id="para">
+      <p>
+Theeya, my love ❤️<br><br>
+I know we didn’t officially start our relationship — it just flowed naturally. We accepted each other’s good and bad sides and were ready to take the responsibility of caring for one another. Baby, my only wish in this relationship is for you to be my wife one day and for both of us to be successful in whatever careers we choose ✨<br><br>
+
+Theeya, today I want to ask you a very important question…<br><br>
+
+Are you ready to take responsibility for a guy who loves being a little baccha in front of you? 🥺💞<br>
+Are you ready to be in a relationship filled only with love — no hate, envy, or jealousy? ❤️<br>
+Are you ready to be in a relationship where I’ll give you all the love in the world? 🌍💘<br>
+Are you ready to stay strong through ups and downs without ever separating from each other? 🤝💖<br>
+Are you ready to be stuck with me forever? 😌💍<br>
+Are you ready to be the luckiest woman in the world? Because baby, I already feel lucky, happy, and grateful to the Almighty to have you in my life 🙏💗
+      </p>
+
+      <button class="continue" onclick="showProposal()">Continue ❤️</button>
+    </div>
+
+    <div id="proposal" style="display:none;">
+      <h2>Will you be my girlfriend, Theeya? 💌❤️</h2>
+      <button class="yes" onclick="yes()">Yes 💖</button>
+      <button class="no" onclick="no()">No 😢</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showProposal() {
+  document.getElementById("para").style.display = "none";
+  document.getElementById("proposal").style.display = "block";
+}
+
+function yes() {
+  document.getElementById("proposal").innerHTML =
+  "<h2>You just made me the happiest man alive ❤️<br>Happy Propose Day my love 💍</h2>";
+}
+
+function no() {
+  alert("Error: 'No' option not available 😌❤️");
+}
+</script>
+
+</body>
+</html>
